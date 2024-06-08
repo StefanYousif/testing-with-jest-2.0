@@ -23,6 +23,6 @@ test('Pushing a new element onto the stack should increase by 1', () => {
     //lägg till ett element på stacken
     stack.push(10);
 
-    //kontrollera att storleken ökade
-    expect(stack.length).toBe(1);
+    //kontrollera att storleken ökade genom att kontrollera om det översta elementet är definierat
+    expect(stack.size()).toBe(1);
 })
