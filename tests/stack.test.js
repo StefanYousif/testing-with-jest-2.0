@@ -22,7 +22,14 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('Pushing a new element onto the stack should increase by 1', () => {
     //lägg till ett element på stacken
     stack.push(10);
+    
+    // Logga storleken på stacken efter att ha lagt till elementet
+    console.log('Storlek på stacken efter att ha lagt till element:', stack.size());
 
     //kontrollera att storleken ökade genom att kontrollera om det översta elementet är definierat
-    expect(stack.peek()).toBeDefined();
+    //expect(stack.peek()).toBeDefined();
+
+    //Kontrollera att storleken ökade genom att kontrollera storleken på stacken
+    expect(stack.size()).toBe(1);
+    
 })
