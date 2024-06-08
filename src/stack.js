@@ -4,9 +4,7 @@ let stack = [];
 
 // Lägger ett element överst i stacken
 exports.push = function (x) {
-    console.log('Lägger till ett element på stacken:', x);
     stack.push(x);
-    console.log('Storlek på stacken:', stack.length);
 };
 
 // Returnerar det översta elementet i stacken och tar bort det

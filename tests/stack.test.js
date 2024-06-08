@@ -4,6 +4,13 @@ test('peek on empty stack returns undefined', () => {
     expect(stack.peek()).toBeUndefined();
 });
 
+beforeEach(() => {
+    //Rensa stacken innan varje test körs
+    while(stack.size() > 0) {
+        stack.pop();
+    }
+});
+
 test('peek on stack with one element returns that element', () => {
     stack.push(1);
     expect(stack.peek()).toBeDefined();
@@ -22,9 +29,6 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('Pushing a new element onto the stack should increase by 1', () => {
     //lägg till ett element på stacken
     stack.push(10);
-    
-    // Logga storleken på stacken efter att ha lagt till elementet
-    console.log('Storlek på stacken efter att ha lagt till element:', stack.size());
 
     //kontrollera att storleken ökade genom att kontrollera om det översta elementet är definierat
     //expect(stack.peek()).toBeDefined();
