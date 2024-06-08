@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/StefanYousif/testing-with-jest-2.0/issues"
   },
-  "homepage": "https://github.com/StefanYousif/testing-with-jest-2.0#readme"
+  "homepage": "https://github.com/StefanYousif/testing-with-jest-2.0#readme",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
 }
