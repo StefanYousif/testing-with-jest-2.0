@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+//Testa att push-funktinen fungerar korrekt
+test('Pushing a new element onto the stack should increase by 1', () => {
+    //lägg till ett element på stacken
+    stack.push(10);
+
+    //kontrollera att storleken ökade
+    expect(stack.size()).toBe(1);
+})

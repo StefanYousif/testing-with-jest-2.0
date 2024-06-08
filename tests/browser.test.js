@@ -32,3 +32,12 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+// Kontrollera att titeln på sidan är rätt
+test('page title should be "En stack"', async () => {
+    //Hitta titeln och hämta dess innehåll
+    const title = await driver.findElement(By.css('h1')).getText();
+
+    //Jämför titeln med den förväntade titeln
+    expect(title).toBe('Här kan vi leka med en stack');
+})
