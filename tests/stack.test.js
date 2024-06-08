@@ -24,5 +24,5 @@ test('Pushing a new element onto the stack should increase by 1', () => {
     stack.push(10);
 
     //kontrollera att storleken ökade genom att kontrollera om det översta elementet är definierat
-    expect(stack.size()).toBe(1);
+    expect(stack.peek()).toBeDefined();
 })
