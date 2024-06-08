@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/StefanYousif/testing-with-jest-2.0#readme",
   "dependencies": {
+    "geckodriver": "^4.4.1",
+    "selenium-webdriver": "^4.21.0",
     "underscore": "^1.13.6"
   },
   "devDependencies": {
