@@ -1,6 +1,8 @@
 #testing-with-jest
 A Jest + npm lab session
 
+// npm install --save-dev jest
+
 
 lade till två tester
 browser.test.js
